@@ -1,0 +1,17 @@
+\definecolor{Postech}{rgb}{0.78431, 0.00392, 0.31372}
+
+\usetheme{Singapore}
+\renewcommand{\insertnavigation}[1]{}
+\setbeamertemplate{frametitle}[default][left]
+\setbeamercolor{structure}{fg=Postech}
+\setbeamercolor{section in head/foot}{use=structure,bg=structure.fg!25!bg}
+\setbeamertemplate{section in toc}[sections numbered]
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+\addbibresource{../references.bib}
